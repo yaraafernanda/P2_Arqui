@@ -1,0 +1,384 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/17.1
+vAdder32bits
+Z0 !s110 1521556702
+!i10b 1
+!s100 ]H0^NRAm[`J07LMS2@]Pb2
+I?Hk^TP<jKohbC>]E>Dlm?3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim
+Z3 w1521210207
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Adder32bits.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Adder32bits.v
+Z4 L0 13
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1521556702.000000
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Adder32bits.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Adder32bits.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@adder32bits
+vALU
+R0
+!i10b 1
+!s100 1TcBJBf@zToez;C:ST=6c2
+IcjMa<;R;Y:3KYnSfL734G1
+R1
+R2
+R3
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ALU.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ALU.v
+L0 20
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ALU.v|
+!i113 1
+R7
+R8
+n@a@l@u
+vALUControl
+Z9 !s110 1521556703
+!i10b 1
+!s100 Gdh4OQ<@_F<7Y^T4]^Ea20
+IBgBo^2>[SMD^9>`KTHc@=1
+R1
+R2
+w1521556678
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ALUControl.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ALUControl.v
+Z10 L0 15
+R5
+r1
+!s85 0
+31
+Z11 !s108 1521556703.000000
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ALUControl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ALUControl.v|
+!i113 1
+R7
+R8
+n@a@l@u@control
+vANDGate
+R9
+!i10b 1
+!s100 =@O=aQRi;bazk13J6U>4m3
+I^1S>ZMaaAFJEl;aD1;YZS3
+R1
+R2
+Z12 w1521210206
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ANDGate.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ANDGate.v
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ANDGate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ANDGate.v|
+!i113 1
+R7
+R8
+n@a@n@d@gate
+vControl
+R9
+!i10b 1
+!s100 QR=Q8eZmGd4A:GOQD?8LK3
+IOMPVQ3Z99Ih3z;k;^[@3<1
+R1
+R2
+w1521556228
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Control.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Control.v
+Z13 L0 14
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Control.v|
+!i113 1
+R7
+R8
+n@control
+vDataMemory
+R9
+!i10b 1
+!s100 @OPaVYHbgG?72[TazmZN01
+I=<Qj1iESlQDLAdJ1E;_6L0
+R1
+R2
+R12
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/DataMemory.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/DataMemory.v
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/DataMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/DataMemory.v|
+!i113 1
+R7
+R8
+n@data@memory
+vDecoderRegisterFile
+R9
+!i10b 1
+!s100 WiBBY1;C0OC:8`V5m[Rn51
+IlaJCfCP?O6PnkzQUJe[MU0
+R1
+R2
+R12
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/DecoderRegisterFile.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/DecoderRegisterFile.v
+Z14 L0 12
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/DecoderRegisterFile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/DecoderRegisterFile.v|
+!i113 1
+R7
+R8
+n@decoder@register@file
+vMIPS_Processor
+R9
+!i10b 1
+!s100 ^3i<8T<>gg3`=<:WRVOY`3
+IWCF5lPj3d[EOESLgm4`TJ3
+R1
+R2
+w1521554141
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MIPS_Processor.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MIPS_Processor.v
+L0 28
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MIPS_Processor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MIPS_Processor.v|
+!i113 1
+R7
+R8
+n@m@i@p@s_@processor
+vMIPS_Processor_TB
+R9
+!i10b 1
+!s100 93:RClE5YGZRK?HHmQNoS0
+I<7li91gTn:jXLQI>NGQ4F0
+R1
+R2
+R12
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MIPS_Processor_TB.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MIPS_Processor_TB.v
+R10
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MIPS_Processor_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MIPS_Processor_TB.v|
+!i113 1
+R7
+R8
+n@m@i@p@s_@processor_@t@b
+vMultiplexer2to1
+R9
+!i10b 1
+!s100 F48Y>?kNP3VGSJ<6PZ3Z<0
+IS=4<F@Rh9AA0RkJIhgOjF1
+R1
+R2
+R12
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Multiplexer2to1.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Multiplexer2to1.v
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Multiplexer2to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Multiplexer2to1.v|
+!i113 1
+R7
+R8
+n@multiplexer2to1
+vMUXRegisterFile
+R9
+!i10b 1
+!s100 <^j`[[]Fjj[]CWW`3JSFT0
+IHAEFaY:IKebgLXlhN]:kF2
+R1
+R2
+R12
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MUXRegisterFile.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MUXRegisterFile.v
+L0 2
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MUXRegisterFile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/MUXRegisterFile.v|
+!i113 1
+R7
+R8
+n@m@u@x@register@file
+vPC_Register
+Z15 !s110 1521556704
+!i10b 1
+!s100 _;b?E28JEcZ?mB]466AVZ0
+IjgX]L6GFG@BlY2RCK6f]f0
+R1
+R2
+R12
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/PC_Register.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/PC_Register.v
+R10
+R5
+r1
+!s85 0
+31
+Z16 !s108 1521556704.000000
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/PC_Register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/PC_Register.v|
+!i113 1
+R7
+R8
+n@p@c_@register
+vProgramMemory
+R15
+!i10b 1
+!s100 h=nZzBdfzHnDo[e^?Qf523
+I4CU^1h2lfFblQ76ZhmYN22
+R1
+R2
+w1521552390
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ProgramMemory.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ProgramMemory.v
+R10
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ProgramMemory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ProgramMemory.v|
+!i113 1
+R7
+R8
+n@program@memory
+vRegister
+R15
+!i10b 1
+!s100 egCIUc]UZ1M2z58M]>B@S3
+I:z;PW7hLF=8RJPgh^EcJR0
+R1
+R2
+R3
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Register.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Register.v
+R14
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/Register.v|
+!i113 1
+R7
+R8
+n@register
+vRegisterFile
+R15
+!i10b 1
+!s100 iRCaBoP=AVEo`Pldi`c<00
+IER0o9nOJKA9XV^64BabXS1
+R1
+R2
+R3
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/RegisterFile.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/RegisterFile.v
+R10
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/RegisterFile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/RegisterFile.v|
+!i113 1
+R7
+R8
+n@register@file
+vShiftLeft2
+R15
+!i10b 1
+!s100 Hi:hlBR22G;<919E5iIcC3
+IIXle;Kl@7a`YkjlFNfe1N3
+R1
+R2
+R3
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ShiftLeft2.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ShiftLeft2.v
+R14
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ShiftLeft2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/ShiftLeft2.v|
+!i113 1
+R7
+R8
+n@shift@left2
+vSignExtend
+R0
+!i10b 1
+!s100 I1D7fe4B<UD12_E`@TC:T3
+I7mED3P58a]dEN_^W`^Be>3
+R1
+R2
+R3
+8C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/SignExtend.v
+FC:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/SignExtend.v
+R13
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/SignExtend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/BasicMIPSProcessor Class 2017/SignExtend.v|
+!i113 1
+R7
+R8
+n@sign@extend
