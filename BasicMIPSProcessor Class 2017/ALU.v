@@ -31,13 +31,10 @@ localparam ADD = 4'b0011;
 localparam SUB = 4'b0111;
 localparam AND = 4'b0000;
 localparam LUI = 4'b0010;
-<<<<<<< HEAD
-=======
 localparam NOR = 4'b0101;
 localparam OR	= 4'b0001;
 localparam SLL = 4'b0100;
 localparam SRL = 4'b0110;
->>>>>>> mike
    
    always @ (A or B or ALUOperation)
      begin
@@ -50,9 +47,6 @@ localparam SRL = 4'b0110;
 			ALUResult=A & B;
 		  LUI: // lui
 			ALUResult={B, 16'b0};
-<<<<<<< HEAD
-
-=======
 		  NOR: // nor
 			ALUResult= ~(A|B);
 		  OR:  // or 
@@ -61,7 +55,7 @@ localparam SRL = 4'b0110;
 		   ALUResult = A << B;
 		  SRL: //Shift left
 		   ALUResult = A >> B;
->>>>>>> mike
+			
 		default:
 			ALUResult= 0;
 		endcase // case(control)
