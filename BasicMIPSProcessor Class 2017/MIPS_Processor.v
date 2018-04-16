@@ -135,7 +135,6 @@ PC_Puls_4
 assign NotZeroANDBranchNE = BranchNE_wire & ~(Zero_wire);
 assign ZeroANDBranchEQ = BranchEQ_wire & Zero_wire;
 assign ORForBranch = NotZeroANDBranchNE | ZeroANDBranchEQ;
-assign PCSrc = ORForBranch;
 
 ShiftLeft2 
 Shift_Branch_Adder
@@ -160,7 +159,7 @@ Multiplexer2to1
 )
 MUX_ForBranch
 (
-	.Selector(PCSrc),
+	.Selector(ORForBranch),
 	.MUX_Data0(Adder_Multiplexer_wire),
 	.MUX_Data1(PC_4_wire),
 	
