@@ -23,7 +23,8 @@ module Control
 	output MemWrite,
 	output ALUSrc,
 	output RegWrite,
-	output [2:0]ALUOp
+	output [2:0]ALUOp,
+	output Jump
 );
 localparam R_Type = 0;
 localparam I_Type_ADDI = 6'h8;

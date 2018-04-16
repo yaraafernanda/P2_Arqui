@@ -58,6 +58,8 @@ wire Zero_wire;
 wire MemWrite_wire;
 wire MemRead_wire;
 wire MemtoReg_wire;
+wire Jump_wire;
+
 wire [2:0] ALUOp_wire;
 wire [3:0] ALUOperation_wire;
 wire [4:0] WriteRegister_wire;
@@ -96,7 +98,8 @@ ControlUnit
 	.RegWrite(RegWrite_wire),
 	.MemWrite(MemWrite_wire),
 	.MemRead(MemRead_wire),
-	.MemtoReg(MemtoReg_wire)
+	.MemtoReg(MemtoReg_wire),
+	.Jump(Jump_wire)
 	
 );
 
