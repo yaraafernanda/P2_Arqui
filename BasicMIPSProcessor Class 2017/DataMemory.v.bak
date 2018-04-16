@@ -26,14 +26,13 @@ module DataMemory
 	reg [DATA_WIDTH-1:0] ram[MEMORY_DEPTH-1:0];
 	wire [DATA_WIDTH-1:0] ReadDataAux;
 
-
 	always @ (posedge clk)
 	begin
 		// Write
 		if (MemWrite)
-			ram[(Address-268500992)/4] <= WriteData;
+			ram[Address] <= WriteData;
 	end
-	assign ReadDataAux = ram[(Address-268500992)/4];
+	assign ReadDataAux = ram[Address];
   	assign ReadData = {DATA_WIDTH{MemRead}}& ReadDataAux;
 
 endmodule

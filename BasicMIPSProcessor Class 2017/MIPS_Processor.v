@@ -27,7 +27,8 @@
 
 module MIPS_Processor
 #(
-	parameter MEMORY_DEPTH = 32
+	parameter MEMORY_DEPTH = 32,
+	parameter DATA_WIDTH = 32
 )
 
 (
@@ -58,9 +59,19 @@ wire Zero_wire;
 wire MemWrite_wire;
 wire MemRead_wire;
 wire MemtoReg_wire;
+wire Jump_wire;
+wire JAL_wire;
+wire JR_wire;
+
 wire [2:0] ALUOp_wire;
 wire [3:0] ALUOperation_wire;
 wire [4:0] WriteRegister_wire;
+wire [4:0] WriteRegister_AfterJAL_wire;
+wire [25:0] JMPAddress_wire;
+
+wire [31:0] WriteData_AfterJAL_wire;
+wire [31:0] JumpAddress;
+wire [31:0] PC_8_wire;
 
 wire [31:0] PC_wire;
 wire [31:0] Instruction_wire;
@@ -76,6 +87,8 @@ wire [31:0] ReadData_Mem_wire;
 wire [31:0] WriteData_wire;
 wire [31:0] Adder_Multiplexer_wire;
 wire [31:0] PC_wire_afterbranch;
+wire [31:0] PC_wire_afterjmp;
+wire [31:0] PC_wire_afterjr;
 
 integer ALUStatus;
 
@@ -97,7 +110,8 @@ ControlUnit
 	.RegWrite(RegWrite_wire),
 	.MemWrite(MemWrite_wire),
 	.MemRead(MemRead_wire),
-	.MemtoReg(MemtoReg_wire)
+	.MemtoReg(MemtoReg_wire),
+	.Jump(Jump_wire)
 	
 );
 
@@ -109,7 +123,7 @@ program_counter
 (
 	.clk(clk),
 	.reset(reset),
-	.NewPC(PC_wire_afterbranch),
+	.NewPC(PC_wire_afterjr),
 	.PCValue(PC_wire)
 );
 
@@ -135,6 +149,10 @@ PC_Puls_4
 assign NotZeroANDBranchNE = BranchNE_wire & ~(Zero_wire);
 assign ZeroANDBranchEQ = BranchEQ_wire & Zero_wire;
 assign ORForBranch = NotZeroANDBranchNE | ZeroANDBranchEQ;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 362b45f1108c2f9046114386735aa1742a690f96
 
 ShiftLeft2 
 Shift_Branch_Adder
@@ -169,6 +187,76 @@ MUX_ForBranch
 
 //******************************************************************/
 //******************************************************************/
+//JUMP SECTION
+assign JMPAddress_wire = {Instruction_wire[25:0]};
+assign JumpAddress = {PC_4_wire[31:28], JMPAddress_wire, 2'b0};
+
+Adder32bits
+PC_Puls_8
+(
+	.Data0(PC_wire),
+	.Data1(8),
+	
+	.Result(PC_8_wire)
+);
+assign JAL_wire = RegWrite_wire && Jump_wire;
+
+//if we storage PC+8 in the $ra or the normal data.
+Multiplexer2to1
+#(
+	.NBits(32)
+)
+MUX_ForJAL_WriteData
+(
+	.Selector(JAL_wire),
+	.MUX_Data0(WriteData_wire),
+	.MUX_Data1(PC_8_wire),
+	
+	.MUX_Output(WriteData_AfterJAL_wire)
+
+);
+//where to write it.
+Multiplexer2to1
+#(
+	.NBits(5)
+)
+MUX_ForJAL_WriteReg
+(
+	.Selector(JAL_wire),
+	.MUX_Data0(WriteRegister_wire),
+	.MUX_Data1(31),
+	
+	.MUX_Output(WriteRegister_AfterJAL_wire)
+
+);
+
+Multiplexer2to1
+#(
+	.NBits(32)
+)
+MUX_ForJump
+(
+	.Selector(Jump_wire),
+	.MUX_Data0(PC_wire_afterbranch),
+	.MUX_Data1(JumpAddress),
+	
+	.MUX_Output(PC_wire_afterjmp)
+
+);
+//Mux for the JR case.
+Multiplexer2to1
+#(
+	.NBits(32)
+)
+MUX_ForJumpRegister
+(
+	.Selector(JR_wire),
+	.MUX_Data0(PC_wire_afterjmp),
+	.MUX_Data1(ALUResult_wire),
+	
+	.MUX_Output(PC_wire_afterjr)
+
+);
 //******************************************************************/
 //******************************************************************/
 //******************************************************************/
@@ -245,6 +333,7 @@ ArithmeticLogicUnit
 	.A(ReadData1_wire),
 	.B(ReadData2OrInmmediate_wire),
 	.Zero(Zero_wire),
+	.Jr(JR_wire),
 	.ALUResult(ALUResult_wire)
 );
 
