@@ -49,8 +49,8 @@ assign  PortOut = 0;
 wire BranchNE_wire;
 wire BranchEQ_wire;
 wire RegDst_wire;
-wire NotZeroANDBrachNE;
-wire ZeroANDBrachEQ;
+wire NotZeroANDBranchNE;
+wire ZeroANDBranchEQ;
 wire ORForBranch;
 wire ALUSrc_wire;
 wire RegWrite_wire;
@@ -76,7 +76,8 @@ wire [31:0] InmmediateExtendAnded_wire;
 wire [31:0] PCtoBranch_wire;
 wire [31:0] ReadData_Mem_wire;
 wire [31:0] WriteData_wire;
-
+wire [31:0] Adder_Multiplexer_wire;
+wire [31:0] PC_wire_afterbranch;
 
 integer ALUStatus;
 
@@ -111,7 +112,7 @@ program_counter
 (
 	.clk(clk),
 	.reset(reset),
-	.NewPC(PC_4_wire),
+	.NewPC(PC_wire_afterbranch),
 	.PCValue(PC_wire)
 );
 
@@ -134,6 +135,41 @@ PC_Puls_4
 	.Result(PC_4_wire)
 );
 
+assign NotZeroANDBranchNE = BranchNE_wire & ~(Zero_wire);
+assign ZeroANDBranchEQ = BranchEQ_wire & Zero_wire;
+assign ORForBranch = NotZeroANDBranchNE | ZeroANDBranchEQ;
+assign PCSrc = ORForBranch;
+
+ShiftLeft2 
+Shift_Branch_Adder
+(   
+	.DataInput(InmmediateExtend_wire),
+	
+   .DataOutput(PCtoBranch_wire)
+);
+
+Adder32bits
+Branch_Adder
+(
+	.Data0(PC_4_wire),
+	.Data1(PCtoBranch_wire),
+	
+	.Result(Adder_Multiplexer_wire)
+);
+
+Multiplexer2to1
+#(
+	.NBits(32)
+)
+MUX_ForBranch
+(
+	.Selector(PCSrc),
+	.MUX_Data0(Adder_Multiplexer_wire),
+	.MUX_Data1(PC_4_wire),
+	
+	.MUX_Output(PC_wire_afterbranch)
+
+);
 
 //******************************************************************/
 //******************************************************************/

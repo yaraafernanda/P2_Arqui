@@ -39,7 +39,7 @@ localparam SRL = 4'b0110;
    always @ (A or B or ALUOperation)
      begin
 		case (ALUOperation)
-		  ADD: // add
+		  ADD: // add - addi
 			ALUResult=A + B;
 		  SUB: // sub
 			ALUResult=A - B;
@@ -55,6 +55,7 @@ localparam SRL = 4'b0110;
 		   ALUResult = A << B;
 		  SRL: //Shift left
 		   ALUResult = A >> B;
+			
 		default:
 			ALUResult= 0;
 		endcase // case(control)
