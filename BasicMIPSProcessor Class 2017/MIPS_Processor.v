@@ -27,7 +27,8 @@
 
 module MIPS_Processor
 #(
-	parameter MEMORY_DEPTH = 32
+	parameter MEMORY_DEPTH = 32,
+	parameter DATA_WIDTH = 32
 )
 
 (
@@ -61,8 +62,6 @@ wire MemtoReg_wire;
 wire Jump_wire;
 wire JAL_wire;
 wire JR_wire;
-
-
 
 wire [2:0] ALUOp_wire;
 wire [3:0] ALUOperation_wire;
@@ -150,7 +149,10 @@ PC_Puls_4
 assign NotZeroANDBranchNE = BranchNE_wire & ~(Zero_wire);
 assign ZeroANDBranchEQ = BranchEQ_wire & Zero_wire;
 assign ORForBranch = NotZeroANDBranchNE | ZeroANDBranchEQ;
+<<<<<<< HEAD
+=======
 
+>>>>>>> 362b45f1108c2f9046114386735aa1742a690f96
 
 ShiftLeft2 
 Shift_Branch_Adder
