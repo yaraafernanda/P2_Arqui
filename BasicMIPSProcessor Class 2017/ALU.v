@@ -63,8 +63,8 @@ localparam JR 	= 4'b1000;
 		default:
 			ALUResult= 0;
 		endcase // case(control)
-		Zero = (ALUResult==0) ? 1'b1 : 1'b0;
-		Jr = (ALUOperation==JR)? 1'b1: 1'b0;
+		Zero = (ALUResult==0) ? 1 : 0;
+		Jr = (ALUOperation==JR)? 1: 0;
 		
      end // always @ (A or B or control)
 endmodule // ALU

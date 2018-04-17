@@ -178,8 +178,8 @@ Multiplexer2to1
 MUX_ForBranch
 (
 	.Selector(ORForBranch),
-	.MUX_Data0(Adder_Multiplexer_wire),
-	.MUX_Data1(PC_4_wire),
+	.MUX_Data0(PC_4_wire),
+	.MUX_Data1(Adder_Multiplexer_wire),
 	
 	.MUX_Output(PC_wire_afterbranch)
 
