@@ -129,7 +129,7 @@ program_counter
 
 ProgramMemory
 #(
-	.MEMORY_DEPTH(MEMORY_DEPTH)
+	.MEMORY_DEPTH(500)
 )
 ROMProgramMemory
 (
@@ -173,7 +173,7 @@ Multiplexer2to1
 #(
 	.NBits(32)
 )
-MUX_ForBranch
+MUX_Branch
 (
 	.Selector(ORForBranch),
 	.MUX_Data0(PC_4_wire),
@@ -209,8 +209,7 @@ MUX_ForJAL_WriteData
 (
 	.Selector(JAL_wire),
 	.MUX_Data0(WriteData_wire),
-	.MUX_Data1(PC_8_wire),
-	
+	.MUX_Data1(PC_8_wire), 
 	.MUX_Output(WriteData_AfterJAL_wire)
 
 );
@@ -347,7 +346,7 @@ DataMemory
 RAM
 (
 	.WriteData(ReadData2_wire),
-	.Address(ALUResult_wire),
+	.Address(ALUResultOut),
 	.MemWrite(MemWrite_wire),
 	.MemRead(MemRead_wire),
 	.clk(clk),

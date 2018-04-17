@@ -28,7 +28,6 @@ module DataMemory
 	wire [9:0] finalAddress;
 	
 	assign finalAddress = (Address-268500992)/4;
-
 	always @ (posedge clk)
 	begin
 		// Write
