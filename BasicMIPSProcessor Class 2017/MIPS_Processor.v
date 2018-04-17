@@ -27,7 +27,7 @@
 
 module MIPS_Processor
 #(
-	parameter MEMORY_DEPTH = 32,
+	parameter MEMORY_DEPTH = 700,
 	parameter DATA_WIDTH = 32
 )
 
@@ -129,7 +129,7 @@ program_counter
 
 ProgramMemory
 #(
-	.MEMORY_DEPTH(500)
+	.MEMORY_DEPTH(MEMORY_DEPTH)
 )
 ROMProgramMemory
 (
