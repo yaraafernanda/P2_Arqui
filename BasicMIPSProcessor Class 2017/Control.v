@@ -49,12 +49,13 @@ always@(OP) begin
 		I_Type_ANDI:      ControlValues= 	12'b00_101_00_00_011; 
 		I_Type_LUI:       ControlValues= 	12'b00_101_00_00_001;
 		I_Type_ORI:			ControlValues= 	12'b00_101_00_00_101;
-		I_Type_LW:			ControlValues= 	12'b00_111_10_00_010;
-		I_Type_BNE:			ControlValues= 	12'b00_100_00_10_000;
-		I_Type_BEQ:			ControlValues= 	12'b00_100_00_01_000;
+		I_Type_LW:			ControlValues= 	12'b00_111_00_00_010;
+		I_Type_BNE:			ControlValues= 	12'b00_000_00_10_100;
+		I_Type_BEQ:			ControlValues= 	12'b00_000_00_01_100;
+
 		J_Type_J:			ControlValues= 	12'b10_000_00_00_000;
 		J_Type_JAL:			ControlValues= 	12'b10_000_00_01_000;//check
-		I_Type_SW: 			ControlValues= 	12'b00_100_01_00_100;
+		I_Type_SW: 			ControlValues= 	12'b00_100_01_00_010;
 		
 		default:
 			ControlValues= 10'b0000000000;
