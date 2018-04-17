@@ -35,8 +35,8 @@ localparam I_Type_ORI    = 9'b101_xxxxxx;
 localparam I_Type_ANDI   = 9'b011_xxxxxx; 
 localparam I_Type_LUI    = 9'b001_xxxxxx; 
 localparam I_Type_LW		 = 9'b010_xxxxxx;
-localparam I_Type_BE     = 9'b000_xxxxxx; 
-localparam I_Type_SW 	 = 9'b100_xxxxxx;
+localparam I_Type_BE     = 9'b100_xxxxxx; 
+localparam I_Type_SW 	 = 9'b010_xxxxxx;
 
 reg [3:0] ALUControlValues;
 wire [8:0] Selector;

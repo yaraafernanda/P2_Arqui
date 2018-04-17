@@ -149,10 +149,7 @@ PC_Puls_4
 assign NotZeroANDBranchNE = BranchNE_wire & ~(Zero_wire);
 assign ZeroANDBranchEQ = BranchEQ_wire & Zero_wire;
 assign ORForBranch = NotZeroANDBranchNE | ZeroANDBranchEQ;
-<<<<<<< HEAD
-=======
 
->>>>>>> 362b45f1108c2f9046114386735aa1742a690f96
 
 ShiftLeft2 
 Shift_Branch_Adder
