@@ -27,7 +27,11 @@
 
 module MIPS_Processor
 #(
+<<<<<<< HEAD
 	parameter MEMORY_DEPTH = 700,
+=======
+	parameter MEMORY_DEPTH = 128,//cambiar a 100 o algo más estaba en 32
+>>>>>>> 0dd66e829e8d17b3e9687a5e64bee2956fa48288
 	parameter DATA_WIDTH = 32
 )
 
@@ -163,7 +167,8 @@ Adder32bits
 Branch_Adder
 (
 	.Data0(PC_4_wire),
-	.Data1(PCtoBranch_wire),
+	//.Data1(PCtoBranch_wire),
+	.Data1({4'b0,PCtoBranch_wire[27:0]}),
 	
 	.Result(Adder_Multiplexer_wire)
 );
@@ -186,7 +191,8 @@ MUX_Branch
 //******************************************************************/
 //JUMP SECTION
 assign JMPAddress_wire = {Instruction_wire[25:0]};
-assign JumpAddress = {PC_4_wire[31:28], JMPAddress_wire, 2'b0};
+//assign JumpAddress = {PC_4_wire[31:28], JMPAddress_wire, 2'b0};	//original
+assign JumpAddress = {10'b0, JMPAddress_wire[19:0], 2'b0};
 
 Adder32bits
 PC_Puls_8
