@@ -54,7 +54,7 @@ always@(OP) begin
 		I_Type_BEQ:			ControlValues= 	12'b00_000_00_01_100;
 
 		J_Type_J:			ControlValues= 	12'b10_000_00_00_000;
-		J_Type_JAL:			ControlValues= 	12'b10_000_00_01_000;//check
+		J_Type_JAL:			ControlValues= 	12'b10_001_00_00_000;//check
 		I_Type_SW: 			ControlValues= 	12'b00_100_01_00_010;
 		
 		default:
