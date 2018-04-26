@@ -15,7 +15,7 @@
 module ProgramMemory
 #
 (
-	parameter MEMORY_DEPTH=32,
+	parameter MEMORY_DEPTH=1024,
 	parameter DATA_WIDTH=32
 )
 (
@@ -31,7 +31,7 @@ assign RealAddress = {2'b0,Address[(DATA_WIDTH-1):2]};
 
 	initial
 	begin
-		$readmemh("C:/Users/hsm-y/Documents/ITESO/6to/Arqui/Proyectos Verilog/ModelSim/P2_Arqui/BasicMIPSProcessor Class 2017/text.dat", rom);
+		$readmemh("C:/Users/inqui/OneDrive/Documentos/ITESO/6 Semestre/Arquitectura de Computadoras/Repositorios/P2_Arqui/BasicMIPSProcessor Class 2017/text.dat", rom);
 	end
 
 	always @ (RealAddress)
